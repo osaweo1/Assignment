@@ -1,2 +1,3 @@
-# Assignment
-my first assignment 
+Assignment
+design a blog using just HTML and CSS
+
