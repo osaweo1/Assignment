@@ -1,0 +1,151 @@
+@import "new.css";
+@import "form.css";
+body {
+    background: #fff;
+    padding: 0;
+}
+
+.container {
+    border: 2px solid #4CA1AF;
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    flex-direction: column;
+    gap: 1px;
+    margin: 0 auto;
+}
+
+.box {
+    padding: 10px;
+}
+
+.box-border {
+    border-bottom: 1px solid #4CA1AF;
+}
+
+.header {
+    background: #2C3E50;
+    background: linear-gradient(to right, #2C3E50, #4CA1AF);
+    color: #f2e9d0;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav {
+    justify-content: center;
+    font-weight: 600;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+}
+
+ul li {
+    text-decoration: none;
+    padding: 10px;
+    align-items: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #2C3E50;
+}
+
+li a:hover {
+    text-decoration: underline 2px;
+}
+
+li a:active {
+    text-decoration: underline #2C3E50 2px;
+}
+
+.footer {
+    color: #f2e9d0;
+    height: 50px;
+    flex-direction: row;
+    background-color: #4CA1AF;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+section {
+    background: url("../image/avatar-3.jpg");
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    object-fit: cover;
+}
+
+.content a {
+    display: block;
+    text-decoration: none;
+    border: 2px solid #2C3E50;
+    text-align: center;
+    padding: 5px;
+    color: #2C3E50;
+}
+
+.content h1 {
+    color: #2C3E50;
+}
+
+.content a:hover {
+    background-color: #2C3E50;
+    color: #4CA1AF;
+}
+
+@media(min-width:750px) {
+    .container {
+        display: grid;
+        grid-template-areas: 'hd hd hd hd hd hd' 'men men men main main main ' 'ft ft ft ft ft ft ';
+    }
+    .header h1 {
+        font-size: 4rem;
+    }
+    .header {
+        grid-area: hd;
+    }
+    .nav {
+        grid-area: men;
+        width: 200px;
+        border-right: 1px solid #4CA1AF;
+        justify-content: center;
+    }
+    .nav ul {
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+        margin-left: -20px;
+    }
+    ul li {
+        padding: 20px;
+        align-items: center;
+        width: 100px;
+    }
+    .content {
+        grid-area: main;
+    }
+    .footer {
+        grid-area: ft;
+    }
+}
+
+@media (min-width:1000px) {
+    .content {
+        padding: 50px;
+    }
+    .nav {
+        padding: 50px;
+    }
+}
