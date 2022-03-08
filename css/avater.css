@@ -11,3 +11,8 @@
 figure {
     margin: 5px;
 }
+
+blockquote {
+    display: block;
+    color: #4CA1AF;
+}

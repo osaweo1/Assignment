@@ -72,6 +72,10 @@ li a:active {
     background-color: #4CA1AF;
 }
 
+.feature {
+    display: none;
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -136,6 +140,10 @@ li a:active {
     .footer {
         grid-area: ft;
     }
+    .feature {
+        display: grid;
+        grid-template-rows: 30px 30px 30px;
+    }
 }
 
 @media (min-width:1000px) {
@@ -144,5 +152,9 @@ li a:active {
     }
     .nav {
         padding: 50px;
+    }
+    .feature {
+        display: grid;
+        grid-template-rows: 30px 30px 30px;
     }
 }
