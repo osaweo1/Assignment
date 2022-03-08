@@ -1,0 +1,13 @@
+.avatar {
+    background: url("../image/avatar-3.jpg");
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    margin-top: -20px;
+    object-fit: cover;
+}
+
+figure {
+    margin: 5px;
+}
